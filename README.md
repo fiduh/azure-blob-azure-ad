@@ -3,8 +3,14 @@
 ### Azure Blob Storage - is an Object store, used to store objects like videos, images, documents, files, etc.
 It's accessible via HTTP/S, Client libraries for almost all programming languages exist for this. Data in Blob is encrypted by default
 
-### Azure Blog Storage Structure:
+### Azure Blob Storage Structure:
 You have the Azure Storage Account --> Below the Storage Account you have Containers (logical groupings of blobs) --> In the containers we upload the blobs themselves (Objects)
+
+### Azure Blob Storage Redundancy Options - there are six options available.
+LRS, ZRS, GRS, GZRS, RA-GRS, RA-GZRS
+
+### Azure Blob Storage Teirs - Blobs are uploaded to one of three tiers 
+Hot, Cool, Archive
 
 How do we add folders and files?
 
