@@ -3,6 +3,8 @@
 ### Azure Blob Storage - is an Object store, used to store objects like videos, images, documents, files, etc.
 It's accessible via HTTP/S, Client libraries for almost all programming languages exist for this. Data in Blob is encrypted by default
 
+How do we add folders and files?
+
 ### Azure Blob Storage Structure:
 You have the Azure Storage Account --> Below the Storage Account you have Containers (logical groupings of blobs) --> In the containers we upload the blobs themselves (Objects)
 
@@ -26,7 +28,8 @@ Cool - Data that's accessed infrequently, Slightly lower SLA (99%), Lower storag
 
 Archive - Data for archival, Stored offline, no SLA, can take hours to retrieve, Lowest storage costs, Highest access costs, Must be stored for at least 180 days (or early deletion fees applied) 
 
-How do we add folders and files?
+### Azure AD (Active Directory) 
+Central identity and access management cloud service. 
 
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
 
