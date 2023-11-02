@@ -39,12 +39,17 @@ Tenant contains Users, Groups, Devices, Apps - they are all grouped with each ot
 Allows you to delegate access to manage your cloud resources, so you don't have to provide access to your entire Azure subscription and potentially compromise a whole lot of different assets, instead if a particular person only needs access to certain specific services or specific resources inside of your azure subscription to perform their job role, you can create a role that has those permissions defined and then provide that person access to the role.
 
 ### Role - a collection of actions that the assigned identity will be able to perform.
-Role definition is an answer to a question "What can be done?" 
+Role definition is an answer to the question "What can be done?" 
 
-A role needs to be assigned to an identity (Security Principal - these are objects within Active Directory that represents users or applications, those could be users or groups of users, application accounts) 
+A role needs to be assigned to an identity (Security Principal - these are objects within Active Directory that represent users or applications, those could be users or groups of users, application accounts) 
 
-### Security Principal - an Azure object (identity) that can be assigned to a role (ex. users,groups or applications)
+### Security Principal - an Azure object (identity) that can be assigned to a role (ex. users, groups, or applications)
 Security Principal assignment is an answer to the question "Who can do it?" 
+
+### Scopes - A role also needs to be assigned to a scope
+Where exactly those actions can be taken? Azure is organized in a hierarchy, the top-level object in Azure is called the Management Group (Which allows you to Group multiple subscriptions or management groups), Subscription is a top-level billing object, under each subscription you will have multiple resource groups and since resource groups are logical containers for resources, under them you will have your own resources. 
+When you assign a role to a scope, you can assign it at any level. 
+
 Create a User, attach a Reader role to it at the subscription level, attach a Storage owner role to it at the Container level, and Repeat for the second user.
 
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
