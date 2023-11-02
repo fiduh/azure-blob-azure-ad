@@ -66,6 +66,11 @@ Role assignment is a combination of the role definition, security principal, and
 
 Create a User, attach a Reader role to it at the subscription level, attach a Storage owner role to it at the Container level, and Repeat for the second user.
 
+### Install Azure CLI in an Ubuntu VM
+
+```bash
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
 
 How does a VM access a file stored in blob storage? - Add Roles to VMs
