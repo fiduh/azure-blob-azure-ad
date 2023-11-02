@@ -7,7 +7,17 @@ It's accessible via HTTP/S, Client libraries for almost all programming language
 You have the Azure Storage Account --> Below the Storage Account you have Containers (logical groupings of blobs) --> In the containers we upload the blobs themselves (Objects)
 
 ### Azure Blob Storage Redundancy Options - there are six options available.
-LRS, ZRS, GRS, GZRS, RA-GRS, RA-GZRS
+LRS - Locally Redundant Storage (Data is synchronously copied 3 times within the same zone
+
+ZRS - Zone Redundant Storage ( Data is synchronously copied to 3 Zones in the Region)
+
+GRS - Geo Redundant Storage (Data is synchronously copied 3 times within the same zone, and then copied asynchronously to paired Region. Data in the secondary Region is accessible only after Failover process)
+
+GZRS, 
+
+RA-GRS, 
+
+RA-GZRS
 
 ### Azure Blob Storage Teirs - Blobs are uploaded to one of three tiers 
 Hot, Cool, Archive
