@@ -33,6 +33,7 @@ Cloud-based Central identity and access management service.
 
 ### Azure AD Tenant
 Each Azure AD tenant is distinct and separate from other Azure AD tenants.
+Tenant contains Users, Groups, Devices, Apps - they are all grouped with each other under that tenant 
 
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
 
