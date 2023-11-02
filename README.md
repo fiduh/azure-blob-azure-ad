@@ -31,7 +31,7 @@ Archive - Data for archival, Stored offline, no SLA, can take hours to retrieve,
 ### Azure AD (Active Directory) 
 Cloud-based Central identity and access management service. 
 
-### Azure AD Tenant
+### Azure AD Tenant - an instance of Azure Active Directory
 Each Azure AD tenant is distinct and separate from other Azure AD tenants.
 Tenant contains Users, Groups, Devices, Apps - they are all grouped with each other under that tenant 
 
