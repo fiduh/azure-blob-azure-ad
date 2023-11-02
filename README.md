@@ -21,15 +21,15 @@ RA-GRS - Read Access-Geo Redundant Storage (Data is synchronously copied 3 times
 
 RA-GZRS - Read Access-Geo-Zone Redundant Storage (Data is synchronously copied to 3 zones within the same Region, and then copied asynchronously to paired Region. There's a read-access to data in the secondary Region)
 
-### Azure Blob Storage Teirs - Blobs are uploaded to one of three tiers 
-Hot - Data that's accessed frequently, Best SLA (99.9%), Highest storage costs, Lowest access costs, Examples (Photos and Documents to show)
+### Azure Blob Storage Tiers - Blobs are uploaded to one of three tiers 
+Hot - Data that are accessed frequently, Best SLA (99.9%), Highest storage costs, Lowest access costs, Examples (Photos and Documents to show)
 
-Cool - Data that's accessed infrequently, Slightly lower SLA (99%), Lower storage cost, Higher access costs, Must be stored for at least 30 days (or early deletion fees applied), Example (Short term backup, Data for future processing)
+Cool - Data that are accessed infrequently, Slightly lower SLA (99%), Lower storage cost, Higher access costs, Must be stored for at least 30 days (or early deletion fees applied), Example (Short term backup, Data for future processing)
 
 Archive - Data for archival, Stored offline, no SLA, can take hours to retrieve, Lowest storage costs, Highest access costs, Must be stored for at least 180 days (or early deletion fees applied) 
 
 ### Azure AD (Active Directory) 
-Central identity and access management cloud service. 
+Cloud-based Central identity and access management service. 
 
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
 
