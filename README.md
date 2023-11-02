@@ -52,6 +52,17 @@ When you assign a role to a scope, you can assign it at any level. If you assign
 
 Scope assignment answers the question "Where can it be done?" 
 
+Example:
+
+"What can be done?" - OWNER Role (Every action can be performed)
+
+"Who can do it?" - USER (JOE)
+
+"Where can it be done?" - VM RESOURCE (DEV-VM)
+
+These 3 things are combined into what's called role assignment. 
+Role assignment is a combination of the role definition, security principal, and scope
+
 Create a User, attach a Reader role to it at the subscription level, attach a Storage owner role to it at the Container level, and Repeat for the second user.
 
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
