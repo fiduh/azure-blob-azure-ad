@@ -36,6 +36,7 @@ Each Azure AD tenant is distinct and separate from other Azure AD tenants.
 Tenant contains Users, Groups, Devices, Apps - they are all grouped with each other under that tenant 
 
 ### Role-Based Access Control (RBAC)
+Authorization system built on Azure Resource Manager (ARM), Designed for fine-grained access management of Azure Resources. Built-in and Custom roles are supported.
 Allows you to delegate access to manage your cloud resources, so you don't have to provide access to your entire Azure subscription and potentially compromise a whole lot of different assets, instead if a particular person only needs access to certain specific services or specific resources inside of your azure subscription to perform their job role, you can create a role that has those permissions defined and then provide that person access to the role.
 
 ### Role - a collection of actions that the assigned identity will be able to perform.
