@@ -3,7 +3,7 @@
 ### Azure Blob Storage - is an Object store, used to store objects like videos, images, documents, files, etc.
 It's accessible via HTTP/S, Client libraries for almost all programming languages exist for this. Data in Blob is encrypted by default
 
-How do we add folders and files?
+### How do we add folders and files?
 
 ### Azure Blob Storage Structure:
 You have the Azure Storage Account --> Below the Storage Account you have Containers (logical groupings of blobs) --> In the containers we upload the blobs themselves (Objects)
@@ -49,7 +49,7 @@ Security Principal assignment is an answer to the question "Who can do it?"
 
 ### Scopes - One or more Azure resources that the access applies to. A role also needs to be assigned to a scope 
 Where exactly those actions can be taken? Azure is organized in a hierarchy, the top-level object in Azure is called the Management Group (Which allows you to Group multiple subscriptions or management groups), Subscription is a top-level billing object, under each subscription you will have multiple resource groups and since resource groups are logical containers for resources, under them you will have your own resources. 
-When you assign a role to a scope, you can assign it at any level. If you assign it at a top level (Management group level) that role will be inherited by all the child resources, and such a role will be propagated across all the subscriptions, all of the resource groups, and all of the resources within the management group.  If you decide to assign it at a subscription level, of course, it will affect only resource groups and resources within that subscription, you can assign it at any level that you want even down to a resource level.  If you want you can grant access to a specific VM or a Specific Database only. 
+When you assign a role to a scope, you can assign it at any level. If you assign it at a top level (Management group level) that role will be inherited by all the child resources, and such a role will be propagated across all the subscriptions, all of the resource groups, and all of the resources within the management group.  If you decide to assign it at a subscription level, it will affect only resource groups and resources within that subscription, you can assign it at any level that you want even down to a resource level.  If you want you can grant access to a specific VM or a Specific Database only. 
 
 Scope assignment answers the question "Where can it be done?" 
 
@@ -64,14 +64,23 @@ Example:
 These 3 things are combined into what's called role assignment. 
 Role assignment is a combination of the role definition, security principal, and scope
 
+### Create, Roles and Policies to restrict files for Users and Groups
+
 Create a User, attach a Reader role to it at the subscription level, attach a Storage owner role to it at the Container level, and Repeat for the second user.
 
+### How does a VM access a file stored in blob storage?
+
+### Use a VM system-assigned managed identity to access Azure Storage
+Create a VM --> Enable system-assigned managed identity by the Security-Identity setting.
+Enabling a system-assigned managed identity is a one-click experience. You can either enable it during the creation of a VM or in the properties of an existing VM.
+
+Grant the VM's system-assigned managed identity access to a storage account or container. 
 ### Install Azure CLI in an Ubuntu VM
 
 ```bash
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
-# check login identity
+# login using identity
 az login --identity
 ```
 
@@ -80,19 +89,3 @@ az login --identity
 ```bash
 az storage blob list --account-name <storage-account> --container-name <container> --output table --auth-mode login
 ```
-
-Create, Roles and Policies to restrict files for Users and Groups - Azure AD
-
-How does a VM access a file stored in blob storage? - Add Roles to VMs
-
-Users 
-
-Joe 1 - has access to only test1 folder and sample1.json file
-
-Joe 2 has access to only test2 folder and sample2.json file
-
-Create policies, roles, users, and groups
-
-Joe 1 - From Virtual Machine, access file sample1.json stored in a blob storage
-
-Joe 2- From Virtual Machine, access file sample2.json stored in a blob storage
