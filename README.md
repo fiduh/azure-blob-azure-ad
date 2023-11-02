@@ -35,6 +35,9 @@ Cloud-based Central identity and access management service.
 Each Azure AD tenant is distinct and separate from other Azure AD tenants.
 Tenant contains Users, Groups, Devices, Apps - they are all grouped with each other under that tenant 
 
+### Role-Based Access Control (RBAC)
+Allows you to deligate access to manage your cloud resources, so you don't have to provide access to your entire Azure subscription and potentially compromise a whole lot of different assets, instead if a particular person only needs access to certain specific services or specific resources inside of your azure subscription to perform their job role, you can create a role that has those permissions defined and then provide that person access to the role
+
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
 
 How does a VM access a file stored in blob storage? - Add Roles to VMs
