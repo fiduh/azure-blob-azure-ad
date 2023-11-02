@@ -38,6 +38,8 @@ Tenant contains Users, Groups, Devices, Apps - they are all grouped with each ot
 ### Role-Based Access Control (RBAC)
 Allows you to delegate access to manage your cloud resources, so you don't have to provide access to your entire Azure subscription and potentially compromise a whole lot of different assets, instead if a particular person only needs access to certain specific services or specific resources inside of your azure subscription to perform their job role, you can create a role that has those permissions defined and then provide that person access to the role.
 
+### Role - a collection of actions that the assigned identity will be able to perform.
+Role definition is an answer to a question "What can be done?" 
 Create a User, attach a Reader role to it at the subscription level, attach a Storage owner role to it at the Container level, and Repeat for the second user.
 
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
