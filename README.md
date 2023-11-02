@@ -44,7 +44,7 @@ Role definition is an answer to a question "What can be done?"
 A role needs to be assigned to an identity (Security Principal - these are objects within Active Directory that represents users or applications, those could be users or groups of users, application accounts) 
 
 ### Security Principal - an Azure object (identity) that can be assigned to a role (ex. users,groups or applications)
-
+Security Principal assignment is an answer to the question "Who can do it?" 
 Create a User, attach a Reader role to it at the subscription level, attach a Storage owner role to it at the Container level, and Repeat for the second user.
 
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
