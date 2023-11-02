@@ -28,7 +28,7 @@ Cool - Data that are accessed infrequently, Slightly lower SLA (99%), Lower stor
 
 Archive - Data for archival, Stored offline, no SLA, can take hours to retrieve, Lowest storage costs, Highest access costs, Must be stored for at least 180 days (or early deletion fees applied) 
 
-### Azure AD (Active Directory) 
+### Microsoft Entra ID (Formerly Azure Active Directory) 
 Cloud-based Central identity and access management service. 
 
 ### Azure AD Tenant - an instance of Azure Active Directory
@@ -36,7 +36,9 @@ Each Azure AD tenant is distinct and separate from other Azure AD tenants.
 Tenant contains Users, Groups, Devices, Apps - they are all grouped with each other under that tenant 
 
 ### Role-Based Access Control (RBAC)
-Allows you to deligate access to manage your cloud resources, so you don't have to provide access to your entire Azure subscription and potentially compromise a whole lot of different assets, instead if a particular person only needs access to certain specific services or specific resources inside of your azure subscription to perform their job role, you can create a role that has those permissions defined and then provide that person access to the role
+Allows you to delegate access to manage your cloud resources, so you don't have to provide access to your entire Azure subscription and potentially compromise a whole lot of different assets, instead if a particular person only needs access to certain specific services or specific resources inside of your azure subscription to perform their job role, you can create a role that has those permissions defined and then provide that person access to the role.
+
+Create a User, attach a Reader role to it at the subscription level, attach a Storage owner role to it at the Container level, and Repeat for the second user.
 
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
 
@@ -46,7 +48,7 @@ Users
 
 Joe 1 - has access to only test1 folder and sample1.json file
 
-Joe 2 has access to only test 2 folder and sample2.json file
+Joe 2 has access to only test2 folder and sample2.json file
 
 Create policies, roles, users, and groups
 
