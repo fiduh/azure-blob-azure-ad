@@ -70,6 +70,9 @@ Create a User, attach a Reader role to it at the subscription level, attach a St
 
 ```bash
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
+# check login identity
+az login --identity
 ```
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
 
