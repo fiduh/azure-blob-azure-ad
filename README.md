@@ -42,6 +42,9 @@ Allows you to delegate access to manage your cloud resources, so you don't have 
 Role definition is an answer to a question "What can be done?" 
 
 A role needs to be assigned to an identity (Security Principal - these are objects within Active Directory that represents users or applications, those could be users or groups of users, application accounts) 
+
+### Security Principal - an Azure object (identity) that can be assigned to a role (ex. users,groups or applications)
+
 Create a User, attach a Reader role to it at the subscription level, attach a Storage owner role to it at the Container level, and Repeat for the second user.
 
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
