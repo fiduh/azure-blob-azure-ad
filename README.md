@@ -31,6 +31,9 @@ Archive - Data for archival, Stored offline, no SLA, can take hours to retrieve,
 ### Azure AD (Active Directory) 
 Cloud-based Central identity and access management service. 
 
+### Azure AD Tenant
+Each Azure AD tenant is distinct and separate from other Azure AD tenants.
+
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
 
 How does a VM access a file stored in blob storage? - Add Roles to VMs
