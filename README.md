@@ -74,6 +74,13 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 # check login identity
 az login --identity
 ```
+
+### List the blobs(objects) in a container
+
+```bash
+az storage blob list --account-name <storage-account> --container-name <container> --output table --auth-mode login
+```
+
 Create, Roles and Policies to restrict files for Users and Groups - Azure AD
 
 How does a VM access a file stored in blob storage? - Add Roles to VMs
