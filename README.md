@@ -46,9 +46,11 @@ A role needs to be assigned to an identity (Security Principal - these are objec
 ### Security Principal - an Azure object (identity) that can be assigned to a role (ex. users, groups, or applications)
 Security Principal assignment is an answer to the question "Who can do it?" 
 
-### Scopes - A role also needs to be assigned to a scope
+### Scopes - One or more Azure resources that the access applies to. A role also needs to be assigned to a scope 
 Where exactly those actions can be taken? Azure is organized in a hierarchy, the top-level object in Azure is called the Management Group (Which allows you to Group multiple subscriptions or management groups), Subscription is a top-level billing object, under each subscription you will have multiple resource groups and since resource groups are logical containers for resources, under them you will have your own resources. 
-When you assign a role to a scope, you can assign it at any level. If you assign it at a top level (Management group level) that role will be inherited by all the child resources, and such a role will be propagated across all the subscriptions, all of the resource groups, and all of the resources within the management group.  If you decide to assign it at a subscription level, of course, it will affect only resource groups and resources within that subscription, you can assign it at any level that you want even down to a resource level.   
+When you assign a role to a scope, you can assign it at any level. If you assign it at a top level (Management group level) that role will be inherited by all the child resources, and such a role will be propagated across all the subscriptions, all of the resource groups, and all of the resources within the management group.  If you decide to assign it at a subscription level, of course, it will affect only resource groups and resources within that subscription, you can assign it at any level that you want even down to a resource level.  If you want you can grant access to a specific VM or a Specific Database only. 
+
+Scope assignment answers the question "Where can it be done?" 
 
 Create a User, attach a Reader role to it at the subscription level, attach a Storage owner role to it at the Container level, and Repeat for the second user.
 
